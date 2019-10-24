@@ -1,4 +1,4 @@
-<div class="container">
+<div id="create-restaurant" class="container mt-5">
 <h1>Create a new restaurant</h1>
 <%= simple_form_for @restaurant do |f| %>
   <%= f.input :name %>
@@ -9,5 +9,5 @@
 <% end %>
 <br>
 <br>
-<%= link_to "Back to your restaurant", restaurants_path %>
+<%= link_to "Back to the list", restaurants_path, class: "btn btn-primary" %>
 </div>
